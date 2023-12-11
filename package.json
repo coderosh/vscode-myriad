@@ -1,0 +1,44 @@
+{
+  "name": "myriad",
+  "displayName": "Myriad Language",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "publisher": "Roshan",
+  "author": {
+    "name": "Roshan Acharya",
+    "email": "acharyaroshan2357@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/coderosh/vscode-myriad.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/coderosh/vscode-myriad#readme",
+  "license": "MIT",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "myriad",
+        "aliases": [
+          "myriad"
+        ],
+        "extensions": [
+          ".myriad"
+        ],
+        "configuration": "./langconfs/myriad.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "myriad",
+        "scopeName": "source.myriad",
+        "path": "./syntaxes/myriad.tmLanguage.json"
+      }
+    ]
+  }
+}
