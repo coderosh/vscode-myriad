@@ -1,5 +1,5 @@
 {
-  "name": "myriad",
+  "name": "genz",
   "patterns": [
     {
       "include": "#comments"
@@ -21,7 +21,7 @@
     },
     {
       "match": "(\\w+)",
-      "name": "variable.name.myriad"
+      "name": "variable.name.genz"
     }
   ],
   "repository": {
@@ -29,61 +29,61 @@
       "patterns": [
         {
           "match": "//(.*)",
-          "name": "comment.line.double-dash.myriad"
+          "name": "comment.line.double-dash.genz"
         },
         {
           "begin": "/\\*",
           "end": "\\*/",
-          "name": "comment.block.myriad"
+          "name": "comment.block.genz"
         }
       ]
     },
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.myriad",
-          "match": "\\b(if|else|for|while|break|continue|return|func|try|catch|import|export|throw|break)\\b"
+          "name": "keyword.control.genz",
+          "match": "\\b(sus|nvm|fr|tweark|drag|finesse|clapback|squad|stan|yikes|snag|bestow|yeet|drag)\\b"
         },
         {
-          "name": "storage.type.myriad",
-          "match": "\\b(let|const|func)\\b"
+          "name": "storage.type.genz",
+          "match": "\\b(lit|litaf|squad)\\b"
         },
         {
-          "name": "keyword.operator.myriad",
-          "match": "<=|>=|--|\\+\\+|>|<|\\+|-|\\*|/|=|==|!=|\\+=|-=|\\*=|/=|&&|\\|\\||!"
+          "name": "keyword.operator.genz",
+          "match": "\\bslaybe\\b|\\bflopbe\\b|--|\\+\\+|\\bslay\\b|\\bflop\\b|\\+|-|\\*|/|\\bbe\\b|\\bfinna\\b|\\bnah\\b|\\+be|-be|\\*be|/be|\\band\\b|\\bor\\b|\\baint\\b"
         }
       ]
     },
     "constants": {
       "patterns": [
         {
-          "name": "constant.numeric.myriad",
+          "name": "constant.numeric.genz",
           "match": "\\b([0-9]+)\\b"
         },
         {
-          "name": "constant.language.boolean.myriad",
-          "match": "\\b(true|false)\\b"
+          "name": "constant.language.boolean.genz",
+          "match": "\\b(nocap|cap)\\b"
         },
         {
-          "name": "constant.language.null.myriad",
-          "match": "\\b(null)\\b"
+          "name": "constant.language.null.genz",
+          "match": "\\b(ghost)\\b"
         }
       ]
     },
     "punctuation": {
-      "name": "punctuation.myriad",
-      "match": ",|:|\\.|;"
+      "name": "punctuation.genz",
+      "match": ",|:|\\.|\\brn\\b"
     },
     "entities": {
       "patterns": [
         {
-          "match": "(func) +(\\w+)",
+          "match": "(squad) +(\\w+)",
           "captures": {
             "1": {
-              "name": "storage.type.myriad"
+              "name": "storage.type.genz"
             },
             "2": {
-              "name": "entity.name.function.myriad"
+              "name": "entity.name.function.genz"
             }
           }
         },
@@ -91,7 +91,7 @@
           "match": "(\\w+)\\(",
           "captures": {
             "1": {
-              "name": "entity.name.function.myriad"
+              "name": "entity.name.function.genz"
             }
           }
         }
@@ -100,34 +100,34 @@
     "strings": {
       "patterns": [
         {
-          "name": "string.quoted.double.myriad",
+          "name": "string.quoted.double.genz",
           "begin": "\"",
           "end": "\"",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.genz",
               "match": "\\\\."
             }
           ]
         },
         {
-          "name": "string.quoted.single.myriad",
+          "name": "string.quoted.single.genz",
           "begin": "'",
           "end": "'",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.genz",
               "match": "\\\\."
             }
           ]
         },
         {
-          "name": "string.quoted.other.myriad",
+          "name": "string.quoted.other.genz",
           "begin": "`",
           "end": "`",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.genz",
               "match": "\\\\."
             }
           ]
@@ -135,5 +135,5 @@
       ]
     }
   },
-  "scopeName": "source.myriad"
+  "scopeName": "source.genz"
 }

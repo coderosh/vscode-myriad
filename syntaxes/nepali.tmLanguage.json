@@ -1,5 +1,5 @@
 {
-  "name": "myriad",
+  "name": "nepali",
   "patterns": [
     {
       "include": "#comments"
@@ -21,7 +21,7 @@
     },
     {
       "match": "(\\w+)",
-      "name": "variable.name.myriad"
+      "name": "variable.name.nepali"
     }
   ],
   "repository": {
@@ -29,61 +29,61 @@
       "patterns": [
         {
           "match": "//(.*)",
-          "name": "comment.line.double-dash.myriad"
+          "name": "comment.line.double-dash.nepali"
         },
         {
           "begin": "/\\*",
           "end": "\\*/",
-          "name": "comment.block.myriad"
+          "name": "comment.block.nepali"
         }
       ]
     },
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.myriad",
-          "match": "\\b(if|else|for|while|break|continue|return|func|try|catch|import|export|throw|break)\\b"
+          "name": "keyword.control.nepali",
+          "match": "\\b(yedi|natra|lagi|jabasamma|todh|jaarirakh|farki|kaam|prayas|samat|aayat|niryat|faal|todh)\\b"
         },
         {
-          "name": "storage.type.myriad",
-          "match": "\\b(let|const|func)\\b"
+          "name": "storage.type.nepali",
+          "match": "\\b(manum|sthir|kaam)\\b"
         },
         {
-          "name": "keyword.operator.myriad",
-          "match": "<=|>=|--|\\+\\+|>|<|\\+|-|\\*|/|=|==|!=|\\+=|-=|\\*=|/=|&&|\\|\\||!"
+          "name": "keyword.operator.nepali",
+          "match": "\\bsabarabar\\b|\\bthbarabar\\b|--|\\+\\+|\\bthulo\\b|\\bsano\\b|\\+|-|\\*|/|\\bbarabar\\b|\\bho\\b|\\bhoina\\b|\\+=|-=|\\*=|/=|\\bra\\b|\\bwa\\b|\\bnai\\b"
         }
       ]
     },
     "constants": {
       "patterns": [
         {
-          "name": "constant.numeric.myriad",
+          "name": "constant.numeric.nepali",
           "match": "\\b([0-9]+)\\b"
         },
         {
-          "name": "constant.language.boolean.myriad",
-          "match": "\\b(true|false)\\b"
+          "name": "constant.language.boolean.nepali",
+          "match": "\\b(satya|galat)\\b"
         },
         {
-          "name": "constant.language.null.myriad",
-          "match": "\\b(null)\\b"
+          "name": "constant.language.null.nepali",
+          "match": "\\b(khali)\\b"
         }
       ]
     },
     "punctuation": {
-      "name": "punctuation.myriad",
-      "match": ",|:|\\.|;"
+      "name": "punctuation.nepali",
+      "match": ",|:|\\.|\\brok\\b"
     },
     "entities": {
       "patterns": [
         {
-          "match": "(func) +(\\w+)",
+          "match": "(kaam) +(\\w+)",
           "captures": {
             "1": {
-              "name": "storage.type.myriad"
+              "name": "storage.type.nepali"
             },
             "2": {
-              "name": "entity.name.function.myriad"
+              "name": "entity.name.function.nepali"
             }
           }
         },
@@ -91,7 +91,7 @@
           "match": "(\\w+)\\(",
           "captures": {
             "1": {
-              "name": "entity.name.function.myriad"
+              "name": "entity.name.function.nepali"
             }
           }
         }
@@ -100,34 +100,34 @@
     "strings": {
       "patterns": [
         {
-          "name": "string.quoted.double.myriad",
+          "name": "string.quoted.double.nepali",
           "begin": "\"",
           "end": "\"",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.nepali",
               "match": "\\\\."
             }
           ]
         },
         {
-          "name": "string.quoted.single.myriad",
+          "name": "string.quoted.single.nepali",
           "begin": "'",
           "end": "'",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.nepali",
               "match": "\\\\."
             }
           ]
         },
         {
-          "name": "string.quoted.other.myriad",
+          "name": "string.quoted.other.nepali",
           "begin": "`",
           "end": "`",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.nepali",
               "match": "\\\\."
             }
           ]
@@ -135,5 +135,5 @@
       ]
     }
   },
-  "scopeName": "source.myriad"
+  "scopeName": "source.nepali"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "myriad",
+  "name": "uwu",
   "patterns": [
     {
       "include": "#comments"
@@ -21,7 +21,7 @@
     },
     {
       "match": "(\\w+)",
-      "name": "variable.name.myriad"
+      "name": "variable.name.uwu"
     }
   ],
   "repository": {
@@ -29,61 +29,61 @@
       "patterns": [
         {
           "match": "//(.*)",
-          "name": "comment.line.double-dash.myriad"
+          "name": "comment.line.double-dash.uwu"
         },
         {
           "begin": "/\\*",
           "end": "\\*/",
-          "name": "comment.block.myriad"
+          "name": "comment.block.uwu"
         }
       ]
     },
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.myriad",
-          "match": "\\b(if|else|for|while|break|continue|return|func|try|catch|import|export|throw|break)\\b"
+          "name": "keyword.control.uwu",
+          "match": "\\b(ifw|ewse|fow|whiwe|bweak|continwue|wetuwn|fwun|twy|catchy|impowt|expowt|thwow|bweak)\\b"
         },
         {
-          "name": "storage.type.myriad",
-          "match": "\\b(let|const|func)\\b"
+          "name": "storage.type.uwu",
+          "match": "\\b(wet|consty|fwun)\\b"
         },
         {
-          "name": "keyword.operator.myriad",
-          "match": "<=|>=|--|\\+\\+|>|<|\\+|-|\\*|/|=|==|!=|\\+=|-=|\\*=|/=|&&|\\|\\||!"
+          "name": "keyword.operator.uwu",
+          "match": "<=|>=|--|\\+\\+|>|<|\\+|-|\\*|/|\\bish\\b|\\beqwualsu\\b|\\bnyotlsu\\b|\\+=|-=|\\*=|/=|\\bawnd\\b|\\bow\\b|\\bnyot\\b"
         }
       ]
     },
     "constants": {
       "patterns": [
         {
-          "name": "constant.numeric.myriad",
+          "name": "constant.numeric.uwu",
           "match": "\\b([0-9]+)\\b"
         },
         {
-          "name": "constant.language.boolean.myriad",
-          "match": "\\b(true|false)\\b"
+          "name": "constant.language.boolean.uwu",
+          "match": "\\b(twue|fawse)\\b"
         },
         {
-          "name": "constant.language.null.myriad",
-          "match": "\\b(null)\\b"
+          "name": "constant.language.null.uwu",
+          "match": "\\b(nuww)\\b"
         }
       ]
     },
     "punctuation": {
-      "name": "punctuation.myriad",
-      "match": ",|:|\\.|;"
+      "name": "punctuation.uwu",
+      "match": ",|:|\\.|\\buwu\\b"
     },
     "entities": {
       "patterns": [
         {
-          "match": "(func) +(\\w+)",
+          "match": "(fwun) +(\\w+)",
           "captures": {
             "1": {
-              "name": "storage.type.myriad"
+              "name": "storage.type.uwu"
             },
             "2": {
-              "name": "entity.name.function.myriad"
+              "name": "entity.name.function.uwu"
             }
           }
         },
@@ -91,7 +91,7 @@
           "match": "(\\w+)\\(",
           "captures": {
             "1": {
-              "name": "entity.name.function.myriad"
+              "name": "entity.name.function.uwu"
             }
           }
         }
@@ -100,34 +100,34 @@
     "strings": {
       "patterns": [
         {
-          "name": "string.quoted.double.myriad",
+          "name": "string.quoted.double.uwu",
           "begin": "\"",
           "end": "\"",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.uwu",
               "match": "\\\\."
             }
           ]
         },
         {
-          "name": "string.quoted.single.myriad",
+          "name": "string.quoted.single.uwu",
           "begin": "'",
           "end": "'",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.uwu",
               "match": "\\\\."
             }
           ]
         },
         {
-          "name": "string.quoted.other.myriad",
+          "name": "string.quoted.other.uwu",
           "begin": "`",
           "end": "`",
           "patterns": [
             {
-              "name": "constant.character.escape.myriad",
+              "name": "constant.character.escape.uwu",
               "match": "\\\\."
             }
           ]
@@ -135,5 +135,5 @@
       ]
     }
   },
-  "scopeName": "source.myriad"
+  "scopeName": "source.uwu"
 }

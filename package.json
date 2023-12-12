@@ -1,8 +1,8 @@
 {
   "name": "myriad",
   "displayName": "Myriad Language",
-  "description": "",
-  "version": "0.0.1",
+  "description": "An esoteric programming language written in typescript supporting different flavours (genz, uwu, pirate, etc).",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -10,6 +10,9 @@
   "author": {
     "name": "Roshan Acharya",
     "email": "acharyaroshan2357@gmail.com"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.js"
   },
   "repository": {
     "url": "https://github.com/coderosh/vscode-myriad.git",
@@ -31,6 +34,46 @@
           ".myriad"
         ],
         "configuration": "./langconfs/myriad.json"
+      },
+      {
+        "id": "genz",
+        "aliases": [
+          "genz"
+        ],
+        "extensions": [
+          ".genzl"
+        ],
+        "configuration": "./langconfs/genz.json"
+      },
+      {
+        "id": "uwu",
+        "aliases": [
+          "uwu"
+        ],
+        "extensions": [
+          ".uwul"
+        ],
+        "configuration": "./langconfs/uwu.json"
+      },
+      {
+        "id": "nepali",
+        "aliases": [
+          "nepali"
+        ],
+        "extensions": [
+          ".nepalil"
+        ],
+        "configuration": "./langconfs/nepali.json"
+      },
+      {
+        "id": "pirate",
+        "aliases": [
+          "pirate"
+        ],
+        "extensions": [
+          ".piratel"
+        ],
+        "configuration": "./langconfs/pirate.json"
       }
     ],
     "grammars": [
@@ -38,7 +81,30 @@
         "language": "myriad",
         "scopeName": "source.myriad",
         "path": "./syntaxes/myriad.tmLanguage.json"
+      },
+      {
+        "language": "genz",
+        "scopeName": "source.genz",
+        "path": "./syntaxes/genz.tmLanguage.json"
+      },
+      {
+        "language": "uwu",
+        "scopeName": "source.uwu",
+        "path": "./syntaxes/uwu.tmLanguage.json"
+      },
+      {
+        "language": "nepali",
+        "scopeName": "source.nepali",
+        "path": "./syntaxes/nepali.tmLanguage.json"
+      },
+      {
+        "language": "pirate",
+        "scopeName": "source.pirate",
+        "path": "./syntaxes/pirate.tmLanguage.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@coderosh/myriad": "^0.4.0"
   }
 }
